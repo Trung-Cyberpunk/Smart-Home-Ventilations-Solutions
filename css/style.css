@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: 'Montserrat';
+}
+
+:root{
+    --bg-color: #fff;
+    --bg-color-header: #307CFF;
+    --text-color: #171427;
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.header_1{
+    height: 50px;
+    background-color: #307CFF;
+}
+.header_2{
+    height: 81px;
+    box-shadow: inset 0px -1px 0px #F2F2F2;
+}
+.header p{
+    color: var(--bg-color);
+}
+.header_1 .nav__links li,i{
+    color: var(--bg-color);
+}
+.nav__links li{
+    display: inline-block;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li:hover{
+    cursor: pointer;
+}
+
+.header_1 .nav__links li{
+    padding-left: 50px;
+}
+.nav__links button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.nav__links button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.header_2 .nav__links li{
+    padding-left: 30px;
+}
+.title{
+    display: block;
+    padding: 150px 10%;
+    height: auto;
+
+}
+.title h1{
+    width: 650px;
+    margin-top:30px;
+    font-weight: 600;
+    font-size: 50px;
+}
+.title p{
+    width: 650px;
+    margin-top:30px;
+    font-weight: 300;
+    font-size: 20px;
+}
+.title button{
+    margin-top:30px;
+    padding: 16px 32px;
+    border-radius: 62px;
+    font-size: 20px;
+    color: var(--bg-color);
+    background-color: #70b64d;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.title button:hover{
+    background-color: rgba(112, 182, 77, 0.5);
+}
