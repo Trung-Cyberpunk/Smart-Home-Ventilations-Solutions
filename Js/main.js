@@ -17,7 +17,7 @@ slides.style.transform = 'translateX(' + (-size * counter) + 'px)';//Dịch chuy
 //CLick -> next
 nextbtn.addEventListener('click', () => {
   if (counter >= slide.length - 1) counter = -1; // nếu counter lớn hơn số slide hiện tại thì trả về -1(giá trị vị trí slide ban đầu)
-  slides.style.transition = 'transform 0.5s ease-in-out';//Update hiệu ứng chuyển động mượt mà thêm
+    //Update hiệu ứng chuyển động mượt mà thêm
   counter++;//tăng giá trị vị trí slide
   slides.style.transform = 'translateX(' + (-size * counter) + 'px)';//Di chuyển vị trí
   currentSlideElement.textContent = counter + 1;//Tăng giá trị của current-silde

@@ -155,11 +155,35 @@ body{
     background-color: #70B64D;
     margin-bottom: 18px;
 }
+.current-slide{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
 
-.slide_title-item{
-    padding-right: 10%
 }
-.slite-content{
+.slide_title-item{
+    display: flex;
+    padding-right: 10%;
+    align-items: center;
+}
+.slide_title-item span{
+    font-size: 25px;
+}
+.slide_title-item sub{
+    font-weight: 300;
+    padding-left: 10px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.slide_title-item button i{
+    align-items: center;
+    font-size: 35px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.slite-content{ 
     display: flex;
     width: 500%;
     height: 900px;
