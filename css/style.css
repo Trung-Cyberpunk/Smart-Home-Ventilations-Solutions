@@ -12,6 +12,9 @@
     font-family: 'Montserrat';
 }
 
+body{
+    overflow-x: hidden; 
+}
 :root{
     --bg-color: #fff;
     --bg-color-header: #307CFF;
@@ -120,7 +123,7 @@
 /* Main */
 
 .slite_container{
-    padding: 0 10%;
+    padding-left: 10%;
 }
 .slite_container .slide_title{
     display: flex;
@@ -153,18 +156,22 @@
     margin-bottom: 18px;
 }
 
-
+.slide_title-item{
+    padding-right: 10%
+}
 .slite-content{
-    width: 100%;
+    display: flex;
+    width: 500%;
     height: 900px;
     margin-top: 80px;
 }
 .card-wrapper{
-    width: 60%;
-
+    width: 900px;
+    height: 700px;
     box-shadow: inset 0px -1px 1px #F2F2F2;
     background-color: #FBFBFB;
     border-radius: 10px;
+    margin-left: 20px;
 }
 .card-wrapper .item-img img{
     width: 100%;
@@ -191,3 +198,4 @@
     font-size: 20px;
     line-height: 25px;
 }
+
