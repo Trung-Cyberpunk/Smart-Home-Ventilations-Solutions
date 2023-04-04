@@ -116,17 +116,78 @@
 .title button:hover{
     background-color: rgba(112, 182, 77, 0.5);
 }
-.card-wrapper{
+
+/* Main */
+
+.slite_container{
+    padding: 0 10%;
+}
+.slite_container .slide_title{
+    display: flex;
+    justify-content: space-between;
+}
+.slite_container .slide_title p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.slite_container .next,.back{
+    background-color: var(--bg-color);
+    font-size: 30px;
+    border: none;
+}
+.next i{
+    color: var(--text-color);
+}
+.back i{
+    color: var(--text-color);
+}
+.bar{
+    content: "";
+    width: 70px;
+    height: 4px;    
+    background-color: #70B64D;
+    margin-bottom: 18px;
+}
+
+
+.slite-content{
     width: 100%;
+    height: 900px;
+    margin-top: 80px;
 }
 .card-wrapper{
-    width: 50%;
-    height: 500px;
+    width: 60%;
+
     box-shadow: inset 0px -1px 1px #F2F2F2;
+    background-color: #FBFBFB;
+    border-radius: 10px;
 }
 .card-wrapper .item-img img{
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
+    width: 100%;
+    height: auto;
+    margin-bottom: 60px;
+}
+
+.slite-content .card-wrapper .item-content{
+    padding: 0 65px 60px 65px;
+}
+.slite-content .card-wrapper .item-content .item_1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+
+.slite-content .card-wrapper .item-content .item_2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
 }
