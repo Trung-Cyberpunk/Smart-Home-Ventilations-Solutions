@@ -2,10 +2,10 @@
 const slider = document.querySelector('.slite_container');
 const slides = document.querySelector('.slite-content');
 const slide = document.querySelectorAll('.card-wrapper');
-const nextbtn = document.querySelector('.next');
-const backbtn = document.querySelector('.back');
+const nextbtn = document.querySelector('.slide_title-item .next');
+const backbtn = document.querySelector('.slide_title-item .back');
 //Lưu trữ số trang slide 
-const currentSlideElement = document.querySelector(".current-slide");
+const currentSlideElement = document.querySelector(".slide_title-item .current-slide");
 
 
 let counter = 0;//Đặt giá trị vị trí slide

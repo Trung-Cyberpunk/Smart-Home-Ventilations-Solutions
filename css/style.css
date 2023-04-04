@@ -122,6 +122,10 @@ body{
 
 /* Main */
 
+
+
+
+/* --------------SLIDE------------- */
 .slite_container{
     padding-left: 10%;
 }
@@ -133,7 +137,7 @@ body{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 50px;
     line-height: 44px;
 }
 
@@ -150,7 +154,7 @@ body{
 }
 .bar{
     content: "";
-    width: 70px;
+    width: 80px;
     height: 4px;    
     background-color: #70B64D;
     margin-bottom: 18px;
@@ -186,7 +190,7 @@ body{
 .slite-content{ 
     display: flex;
     width: 500%;
-    height: 900px;
+    height: 700px;
     margin-top: 80px;
 }
 .card-wrapper{
@@ -221,5 +225,28 @@ body{
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
+}
+
+/* --------------QUESTION------------- */
+
+.question_container{
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;/* cài đặt khối theo chiều dọc */
+    align-items: center; /* Căn giữa item */
+    text-align: center;/* căn giữa text */
+}
+.question_title h1{
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 16px;
+}
+.question_title p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
 }
 
