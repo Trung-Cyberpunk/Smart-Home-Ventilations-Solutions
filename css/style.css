@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -47,6 +48,9 @@
     align-items: center;
     transition: all 0.3s ease 0s;
 }
+.header_2 .nav__links li a{
+    font-weight: 300;
+}
 
 .nav__links li:hover{
     cursor: pointer;
@@ -67,6 +71,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
+    background-color: var(--bg-color);
 }
 .nav__links button:hover{
     background-color: rgba(255, 255, 255, 0.8);
@@ -74,17 +79,22 @@
 .header_2 .nav__links li{
     padding-left: 30px;
 }
+/* Title */
 .title{
     display: block;
     padding: 150px 10%;
-    height: auto;
-
+    height: 900px;
+    background: linear-gradient(90deg, #FFFFFF 32.38%, rgba(255, 255, 255, 0) 56.11%),
+    url(/Smart-Home-Ventilations-Solutions/img/Bg_1.png),
+    #FFFFFF;
+    background-size:100%;
+    background-repeat: no-repeat;
 }
 .title h1{
-    width: 650px;
-    margin-top:30px;
-    font-weight: 600;
-    font-size: 50px;
+    width: 750px;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 50px;    
 }
 .title p{
     width: 650px;
@@ -105,4 +115,18 @@
 }
 .title button:hover{
     background-color: rgba(112, 182, 77, 0.5);
+}
+.card-wrapper{
+    width: 100%;
+}
+.card-wrapper{
+    width: 50%;
+    height: 500px;
+    box-shadow: inset 0px -1px 1px #F2F2F2;
+}
+.card-wrapper .item-img img{
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
