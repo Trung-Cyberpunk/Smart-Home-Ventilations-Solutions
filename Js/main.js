@@ -75,7 +75,7 @@ for(let i = 0; i < countt; i++){
     number = i + 1;
     questions.style.transition = 'transform 0.5s ease-in-out';
     questions.style.transform = 'translateX(' + ( - size_qs * number) + 'px)';
-  })
+  });
   btnback_qs[i].addEventListener('click', () => {
     if (number <= 0) return;//Counter = 0 thì stop
     questions.style.transition = 'transform 0.5s ease-in-out';
