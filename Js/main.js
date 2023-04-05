@@ -65,6 +65,29 @@ let number = 0;
 
 questions.style.transform   = 'translateX(' + (-size_qs * number) + 'px)';
 
+
+var allItem = document.querySelectorAll(".roll_question .question")
+
+var countt = allItem.length;
+
+for(let i = 0; i < countt; i++){
+  btnnext_qs[i].addEventListener('click', () => {
+    number = i + 1;
+    questions.style.transition = 'transform 0.5s ease-in-out';
+    questions.style.transform = 'translateX(' + ( - size_qs * number) + 'px)';
+  })
+  btnback_qs[i].addEventListener('click', () => {
+    if (number <= 0) return;//Counter = 0 thì stop
+    questions.style.transition = 'transform 0.5s ease-in-out';
+    number--;
+    questions.style.transform = 'translateX(' + (-size_qs * number) + 'px)';
+  });
+  
+  btnBackALL.addEventListener('click', () => {
+    questions.style.transition = 'transform 0.5s ease-in-out'; //Update hiệu ứng chuyển động mượt mà thêm
+    questions.style.transform = 'translateX(' + (size_qs - size_qs) + 'px)';//Di chuyển vị trí
+  });
+}
 // //Lưu trữ số trang slide 
 // // const current_QSElement = document.querySelector(".current_QS");
 
@@ -91,28 +114,6 @@ questions.style.transform   = 'translateX(' + (-size_qs * number) + 'px)';
 // });
 
 
-var allItem = document.querySelectorAll(".roll_question .question")
-
-var countt = allItem.length;
-
-for(let i = 0; i < countt; i++){
-  btnnext_qs[i].addEventListener('click', () => {
-    number = i + 1;
-    questions.style.transition = 'transform 0.5s ease-in-out';
-    questions.style.transform = 'translateX(' + ( - size_qs * number) + 'px)';
-  })
-  btnback_qs[i].addEventListener('click', () => {
-    if (number <= 0) return;//Counter = 0 thì stop
-    questions.style.transition = 'transform 0.5s ease-in-out';
-    number--;
-    questions.style.transform = 'translateX(' + (-size_qs * number) + 'px)';
-  });
-  
-  btnBackALL.addEventListener('click', () => {
-    questions.style.transition = 'transform 0.5s ease-in-out'; //Update hiệu ứng chuyển động mượt mà thêm
-    questions.style.transform = 'translateX(' + (size_qs - size_qs) + 'px)';//Di chuyển vị trí
-  });
-}
 
 // btnBackALL.addEventListener('click', () => {
 //   questions.style.transition = 'transform 0.5s ease-in-out'; //Update hiệu ứng chuyển động mượt mà thêm
@@ -177,14 +178,6 @@ up[0].onclick = function(){
 };
 
 
-
-// down[0].onclick = function() {
-//   questionjs[0].style.height = '150px'; //setting cho khối cao hơn để chứa câu trả lời
-//   traloi[0].style.display = 'block'; //làm câu trả lời xuất hiện
-//   questionjs[0].style.transition = "0.1s ease-in"; //Hiệu ứng trượt xuống cho khối question
-//   down[0].style.display = 'none';
-//   up[0].style.display = 'block';
-// };
 
 // var qs_items = document.querySelectorAll(".qs-item");
 
