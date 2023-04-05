@@ -151,3 +151,76 @@ for(let i = 0; i < countt; i++){
 //   questions.style.transform = 'translateX(' + (-size_qs * number) + 'px)';
 //   // 
 // });
+
+
+
+
+var spans = document.querySelectorAll(".item-dnw");
+var droop_item = document.querySelectorAll(".droop-item");
+
+
+var down = document.querySelectorAll(".down");
+var up = document.querySelectorAll(".up");
+
+down[0].onclick = function(){
+  droop_item[0].style.transition = '0.1s ease-in';
+  spans[0].style.display = 'block';
+  down[0].style.display = 'none';
+  up[0].style.display = 'block';
+};
+
+up[0].onclick = function(){
+  droop_item[0].style.transition = '0.1s ease-in';
+  spans[0].style.display = 'none';
+  up[0].style.display = 'none';
+  down[0].style.display = 'block';
+};
+
+
+
+// down[0].onclick = function() {
+//   questionjs[0].style.height = '150px'; //setting cho khối cao hơn để chứa câu trả lời
+//   traloi[0].style.display = 'block'; //làm câu trả lời xuất hiện
+//   questionjs[0].style.transition = "0.1s ease-in"; //Hiệu ứng trượt xuống cho khối question
+//   down[0].style.display = 'none';
+//   up[0].style.display = 'block';
+// };
+
+// var qs_items = document.querySelectorAll(".qs-item");
+
+// for (var i = 0; i < qs_items.length; i++) {
+//   var droop_item = qs_items[i].querySelector(".droop-item");
+//   var span = qs_items[i].querySelector(".item-dnw");
+//   var down = qs_items[i].querySelector(".down");
+//   var up = qs_items[i].querySelector(".up");
+  
+//   down.addEventListener('click', function() {
+//     droop_item.style.transition = 'transform 0.5s ease-in-out';
+//     span.style.display = 'block';
+//     down.style.display = 'none';
+//   });
+// }
+
+
+// var qsItems = document.querySelectorAll(".qs-item");
+
+// qsItems.forEach(function(qsItem) {
+//   var span = qsItem.querySelector(".item-dnw");
+//   var droopItem = qsItem.querySelector(".droop-item");
+//   var down = qsItem.querySelector(".down");
+//   var up = qsItem.querySelector(".up");
+
+//   down.addEventListener("click", function() {
+//     span.style.display = "block";
+//     droopItem.style.transition = "transform 0.5s ease-in-out";
+//     down.style.display = "none";
+//     up.style.display = "block";
+//   });
+
+//   up.addEventListener("click", function() {
+//     span.style.display = "none";
+//     droopItem.style.transition = "transform 0.5s ease-in-out";
+//     down.style.display = "block";
+//     up.style.display = "none";
+//   });
+// });
