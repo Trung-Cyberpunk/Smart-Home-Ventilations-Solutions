@@ -428,7 +428,7 @@ body{
     width: 1500px;
 }
 
-/* FORFILE */
+/* ------------------FORFILE----------------- */
 .forfile{
     padding:0 25%;
     width: 100%;
@@ -455,6 +455,7 @@ body{
     font-weight: 500;
     font-size: 18px;
     opacity: 0.8;
+    line-height: 150%;
 }
 .input_field{
     display: flex;
@@ -559,3 +560,41 @@ input[type="checkbox"]:checked + label::before{
     background-color: rgba(112, 182, 77, 0.8);
     cursor: pointer;
 }
+
+/* ------------------FAQ----------------- */
+
+.faq{
+    margin-top: 200px;
+    width: 100%;
+    height: 1000px;
+    padding-top: 80px;
+    background-color: #FBFBFB;
+}
+.faq_qs{
+    width: 100%;
+    padding: 0 25%;
+}
+.faq_qs-content .bar{
+    display: inline-flex;
+    flex-direction: column;
+    width: 50px;
+}
+.faq_qs-content{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+}
+.faq_qs-content h1{
+    font-weight: 700;
+    font-size: 42px;
+    padding-bottom: 15px;
+}
+.faq_qs-content p{
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0.8;
+    padding-bottom: 60px;
+    line-height: 150%;
+}
+
+/* QS */
