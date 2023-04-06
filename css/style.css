@@ -564,7 +564,7 @@ input[type="checkbox"]:checked + label::before{
 /* ------------------FAQ----------------- */
 
 .faq{
-    margin-top: 200px;
+    margin-top: 100px;
     width: 100%;
     height: auto;
     padding-top: 80px;
@@ -625,13 +625,14 @@ input[type="checkbox"]:checked + label::before{
 }
 
 .item-dnw{
-    /* display: none;    */
+    display: none;
     font-weight: 500;
     font-size: 17px;
     line-height: 140%;
     opacity: 0.7;
     padding-right: 10px;
     margin-top: 20px;
+    transition: all 0.6s ease;
 }
 
 
@@ -656,7 +657,7 @@ input[type="checkbox"]:checked + label::before{
 .up{
     display: none;
 }
-.up i{
+.up{
     color: #70B64D;
 }
 
