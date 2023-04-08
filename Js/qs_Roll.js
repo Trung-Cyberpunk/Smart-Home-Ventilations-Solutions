@@ -46,6 +46,9 @@ for(let i = 0; i < countt; i++){
     questions.style.transform = 'translateX(' + (-size_qs * number) + 'px)';
   });
 };
+
+
+
 // btnnext_qs[0].addEventListener('click', () => {
   //   number = 1;//giá trị vị trí slide
 //   questions.style.transition = 'transform 0.5s ease-in-out'; //Update hiệu ứng chuyển động mượt mà thêm
@@ -66,4 +69,39 @@ for(let i = 0; i < countt; i++){
 //   number++;//tăng giá trị vị trí slide
 //   questions.style.transform = 'translateX(' + (-size_qs * number) + 'px)';//Di chuyển vị trí
 //   // current_QSElement.textContent = number + 1;//Tăng giá trị của current-silde
+// });
+
+
+
+
+//------------------Cách 2-----------------
+
+
+// $(document).ready(function() {
+//   $('.roll_question').slick({
+//     // Các tùy chọn của Slick Slider
+//     slidesToShow: 1,
+//     arrows: false,    
+//   });
+  
+//   $('.back_qs').click(function() {
+//     $('.roll_question').slick('slickPrev');
+//   });
+  
+//   $('.next_qs').click(function() {
+//     $('.roll_question').slick('slickNext');
+//   });
+// });
+
+// $('.roll_question').on('afterChange', function(event, slick, currentSlide) {
+//   // Lấy tổng số slide
+//   var totalSlides = slick.slideCount;
+  
+//   // Hiển thị số trang hiện tại và tổng số trang
+//   var currentPage = currentSlide + 1;
+//   $('.slider-pagination').text(currentPage + ' / ' + totalSlides);
+// });
+
+// $('.comback').click(function() {
+//   $('.roll_question').slick('slickGoTo', 0); // Chuyển đến slide đầu tiên
 // });
