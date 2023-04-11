@@ -7,12 +7,6 @@ const btnclickY = document.querySelectorAll(".up");
 const item = document.querySelectorAll(".item-dnw");
 const itemdiv = document.querySelectorAll(".item")
 
-window.addEventListener('resize', function() {
-  if (window.innerWidth < 390) {
-    this.alert("trung")
-  }
-});
-
 const quantity_item = document.querySelectorAll(".qs-item");
 
 for (let i = 0; i < quantity_item.length; i++) {

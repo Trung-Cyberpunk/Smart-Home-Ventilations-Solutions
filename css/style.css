@@ -15,6 +15,7 @@
 
 body{
     width: 100%;
+    height: auto    ;
     overflow-x: hidden; 
 }
 :root{
@@ -1013,6 +1014,7 @@ input[type="checkbox"]:checked + label::before{
     .faq_qs-content #title_2{
         display: block;
     }
+
 }
 
 
@@ -1084,12 +1086,41 @@ input[type="checkbox"]:checked + label::before{
     display: block;
 }
 
+#footer-second{
+    display: none;
+    padding-bottom: 2rem;
+}
+
+.item_footer-top .email-btn{
+    width: 100%;
+    height: 2rem;
+    display: grid;
+    grid-template-columns: 80% 10%;
+    justify-content: center;
+    border: 1px;
+    border-radius: 7px;
+    background-color: var(--bg-color);
+}
+.item_footer-top .email-btn #text-btn{
+    background-color: var(--bg-color);  
+    font-size: 1rem;
+    color: #000;
+}
+
+.item_footer-top .email-btn .btn-email{
+    background-color: var(--bg-color);
+    font-size: 20px;
+    color: #307CFF;
+}
+
+
+
 @media screen and (max-width: 400px){
     .footer_top{
         display: flex;
         padding: 1.1rem;
         width: 100%;
-        height: 1500px;
+        height: auto;
         flex-direction: column;
     }
     .item_footer-top{
@@ -1119,6 +1150,16 @@ input[type="checkbox"]:checked + label::before{
     .item_footer-top .icon_footer, .phone{
         display: none;
     }
+    #footer-second{
+        display: block;
+    }
+}
+
+.item_footer-top .item{
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .item-dnw{
@@ -1162,14 +1203,32 @@ input[type="checkbox"]:checked + label::before{
 
 .footer_bottom{
     width: 100%;
-    width: auto;
+    padding: 20px;
     background-color: #424249;
 }
 
-.footer_bottom span{
+.footer_bottom #bottom_item{
     display: flex;
+    width: 100%;
     color: var(--bg-color);
     justify-content: center;
-    padding: 30px;
+    text-align: center;
+    letter-spacing:2px;
+    padding: 1.5rem;
+    font-size: 0.7rem;
     font-weight: 300;
+}
+#bottom_1{
+    display: block;
+}
+#bottom_2{
+    display: none;
+}
+@media screen and (max-width: 400px) {
+    #bottom_1{
+        display: none;
+    }
+    #bottom_2{
+        display: block;
+    }
 }
