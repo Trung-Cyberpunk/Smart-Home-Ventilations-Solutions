@@ -72,7 +72,7 @@ body{
     border: none;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    font-family: 'Mon   tserrat';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -136,24 +136,22 @@ body{
 }
 
 
+
+
  @media screen and (max-width: 1374px) {
     .header_2 {
-      display: none;
+        display: none;
     }
     .header_1{
         display: none;
     }
 
 }
-/* @media screen and (min-width: 1374px) {
+@media screen and (min-width: 1374px) {
     .header_3-all{
         display: none;
     }
-}  */
-
-
-
-
+} 
 
 /* Title */
 .title{
