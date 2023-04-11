@@ -473,15 +473,15 @@ body{
 }
 
 /* cách 1 */
-.roll_question{
-    /* display: inline-flex; */
-    /* overflow-x: hidden; */
-    /* width: 500%; */
+/* .roll_question{
+    display: inline-flex;
+    overflow-x: hidden;
+    width: 500%;
 }
 .question_item{
-    /* margin-left: 25px; */
-    /* width: 1500px; */
-}
+    margin-left: 25px;
+    width: 1500px;
+} */
 
 .question_button sub{
     font-size: 23px;
