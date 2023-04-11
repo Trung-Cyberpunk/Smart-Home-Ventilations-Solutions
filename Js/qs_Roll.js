@@ -5,47 +5,62 @@
 // const question = document.querySelector(".question_container-item");
 
 
+// CÁCH 1
+// const questions = document.querySelector(".roll_question");
+// const questions_item = document.querySelectorAll(".question_item");
+// const btnBackALL = document.querySelector(".comback");
+// const btnback_qs = document.querySelectorAll(".back_qs");
+// const btnnext_qs = document.querySelectorAll(".next_qs");
 
-const questions = document.querySelector(".roll_question");
-const questions_item = document.querySelectorAll(".question_item");
-
-
-const btnBackALL = document.querySelector(".comback");
-const btnback_qs = document.querySelectorAll(".back_qs");
-const btnnext_qs = document.querySelectorAll(".next_qs");
-
-const size_qs = questions_item[0].clientWidth;
+// const size_qs = questions_item[0].clientWidth;
 
 
-let number = 0;
+// let number = 0;
 
-questions.style.transform   = 'translateX(' + (-size_qs * number) + 'px)';
-var allItem = document.querySelectorAll(".roll_question .question")
+// questions.style.transform   = 'translateX(' + (-size_qs * number) + 'px)';
+// var allItem = document.querySelectorAll(".roll_question .question")
 
-var countt = allItem.length;
+// var countt = allItem.length;
 
 
-for(let i = 0; i < countt; i++){
-  btnnext_qs[i].addEventListener('click', () => {
-    number = i + 1;
-    questions.style.transition = 'transform 0.5s ease-in-out';
-    questions.style.transform = 'translateX(' + ( - size_qs * number) + 'px)';
+// for(let i = 0; i < countt; i++){
+//   btnnext_qs[i].addEventListener('click', () => {
+//     number = i + 1;
+//     questions.style.transition = 'transform 0.5s ease-in-out';
+//     questions.style.transform = 'translateX(' + ( - size_qs * number) + 'px)';
+//   });
+
+//   btnBackALL.addEventListener('click', () => {
+//     questions.style.transition = 'transform 0.5s ease-in-out'; //Update hiệu ứng chuyển động mượt mà thêm
+//     questions.style.transform = 'translateX(' + (size_qs - size_qs) + 'px)';//Di chuyển vị trí
+//   });
+// };
+
+// for(let i = 0; i < countt; i++){
+//     btnback_qs[i].addEventListener('click', () => {
+//     if (number <= 0) return;//Counter = 0 thì stop
+//     questions.style.transition = 'transform 0.5s ease-in-out';
+//     number--;
+//     questions.style.transform = 'translateX(' + (-size_qs * number) + 'px)';
+//   });
+// };
+
+
+///CÁCH 2
+$(document).ready(function() {
+  $('.roll_question').slick({
+    arrows: false
   });
-
-  btnBackALL.addEventListener('click', () => {
-    questions.style.transition = 'transform 0.5s ease-in-out'; //Update hiệu ứng chuyển động mượt mà thêm
-    questions.style.transform = 'translateX(' + (size_qs - size_qs) + 'px)';//Di chuyển vị trí
+  $('.next_qs').click(function(){
+    $('.roll_question').slick('slickNext');
   });
-};
-
-for(let i = 0; i < countt; i++){
-    btnback_qs[i].addEventListener('click', () => {
-    if (number <= 0) return;//Counter = 0 thì stop
-    questions.style.transition = 'transform 0.5s ease-in-out';
-    number--;
-    questions.style.transform = 'translateX(' + (-size_qs * number) + 'px)';
+  $('.back_qs').click(function(){
+    $('.roll_question').slick('slickPrev');
   });
-};
+  $('.comback').click(function() {
+    $('.roll_question').slick('slickGoTo', 0);
+  });
+});
 
 
 
